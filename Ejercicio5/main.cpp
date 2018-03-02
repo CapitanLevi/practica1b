@@ -12,9 +12,8 @@ using namespace std;
 
 int main()
 {
-    int A, B, q, r, division1;
-    float Frac, rFloat, BFloat, division2;
-    int modulo1;
+    int A, B, q, r;
+    float Frac, rFloat, BFloat;
     cout << "Ingrese primer numero: " << endl;
     cin >> A;
     cout << "Ingrese segundo numero: " << endl;
