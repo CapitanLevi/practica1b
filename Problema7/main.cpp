@@ -16,18 +16,20 @@ int main()
     int N;
     cout << "Ingrese un numero N: " << endl;
     cin>>N;
-    int PrimerNumero=0;
+    int PrimerNumero=1;
     int SegundoNumero=1;
-    int Suma=0, Siguiente;
-    for(int i;i<=N;i++){
-        Siguiente=PrimerNumero+SegundoNumero;
+    int SumaPares=0, SiguienteNumero;
+    do{
+        SiguienteNumero=PrimerNumero+SegundoNumero;
         PrimerNumero=SegundoNumero;
-        SegundoNumero=Suma;
-        if(Siguiente%2==0){
-            Suma+=Siguiente;
+        SegundoNumero=SiguienteNumero;
+        cout << SumaPares << endl;
+        if(SegundoNumero%2==0){
+            SumaPares+=SegundoNumero;
         }
     }
-    cout << "El resultado de la suma es: " << Suma << endl;
+    while(SiguienteNumero<N);
+    cout << "El resultado de la suma es: " << SumaPares << endl;
     return 0;
 }
 
