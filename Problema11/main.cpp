@@ -7,11 +7,13 @@ Por pura fuerza bruta.
 using namespace std;
 
 int main() {
-	int N, Producto=1,ActualMCM;
+    int N, ActualMCM;
+    unsigned long int Producto=1;
 	bool NoEsMCM=false;
 	cout<<"Ingrese número N: " << endl;
 	cin>>N;
 	for(int i=1; i<=N; i++)Producto*=i;
+
 	for(int MCM=Producto; MCM>=N; MCM--){
 		for(int i=1; i<=N; i++){
 			if(MCM%i!=0){
@@ -26,5 +28,8 @@ int main() {
 		
 	cout<<"MCM: "<<ActualMCM<<endl;
 	cout<<"Producto: "<<Producto<<endl;
-	return 0;
+    for(int i=1;i <= N; i++){
+        cout<<i<<",";
+    }
+    return 0;
 	}

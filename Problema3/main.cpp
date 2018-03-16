@@ -16,10 +16,10 @@ int main()
 {
     int Mes, Dia;
     bool MesValido, DiaValido;
-    cout << "Ingrese un mes del año (el número): " << endl;
-    cin >> Mes;
     cout << "Ingrese un día del mes (el número) si lo desea: " << endl;
     cin >> Dia;
+    cout << "Ingrese un mes del año (el número): " << endl;
+    cin >> Mes;
     //Verificacion del mes
     if(Mes>=1 && Mes<=12)MesValido=true;
     else{MesValido=false;}
